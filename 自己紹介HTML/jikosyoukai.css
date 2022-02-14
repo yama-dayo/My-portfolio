@@ -1,0 +1,311 @@
+@charset "UTF-8";
+
+html {
+  /* フォントサイズ100%
+  font-size: 100%;
+}
+
+body {
+  color: #24292e;
+}
+
+a {
+  /* サイト内のリンクに下線が表示されないように設定*/
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+/* 画面の最大幅を指定。共通で使用 */
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto 130px auto;
+  font-size: 0.9rem;
+  padding: 0 4%;
+}
+
+/* h1タグ用 */
+.site-title {
+  line-height: 1px;
+}
+
+.site-title a {
+  display: block;
+}
+
+/* h2タグ用 */
+.sec-title {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 65px;
+}
+
+/*-------------------------------------------
+SP
+-------------------------------------------*/
+@media screen and (max-width: 600px) {
+  .wrapper {
+    margin-bottom: 70px;
+  }
+
+  .site-title {
+    margin-top: 20px;
+  }
+
+  .sec-title {
+    margin-bottom: 40px;
+  }
+}
+
+/*-------------------------------------------
+ヘッダー
+-------------------------------------------*/
+#header {
+  max-width: 960px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+
+#header ul {
+  display: flex;
+  padding: 10px 0;
+}
+
+#header li {
+  font-size: 0.9rem;
+  margin-left: 30px;
+}
+
+#header li a {
+  color: #24292e;
+}
+
+#header li a:hover {
+  opacity: 0.7;
+  /* メニューにマウスをのせた際に透過 */
+}
+
+#header li img.icon {
+  width: 20px;
+}
+
+/*-------------------------------------------
+SP
+-------------------------------------------*/
+@media screen and (max-width: 600px) {
+
+  /*-------------------------------------------
+  ヘッダー
+  -------------------------------------------*/
+  #header {
+    max-width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+
+  #header li {
+    font-size: 0.8rem;
+    margin-left: 20px;
+  }
+
+  #header li:first-child {
+    margin-left: 0;
+  }
+}
+
+/*-------------------------------------------
+Mainvisual
+-------------------------------------------*/
+#mainvisual {
+  margin-bottom: 80px;
+}
+
+#mainvisual img {
+  width: 100%;
+  max-width: 1920px;
+  height: 420px;
+  object-fit: cover;
+}
+
+/*-------------------------------------------
+自己紹介　経歴
+-------------------------------------------*/
+#about ul {
+  margin-bottom: 30px;
+}
+
+#about li:first-child {
+  margin-bottom: 30px;
+}
+
+#about p {
+  text-align: justify;
+  /* 両端で揃える */
+}
+
+/*-------------------------------------------
+作品
+-------------------------------------------*/
+#works ul {
+  display: flex;
+  /* 横並びに配置 */
+  justify-content: space-between;
+  /* 両端で揃える */
+  flex-wrap: wrap;
+  /* 折り返す */
+  margin-bottom: 50px;
+}
+
+#works li {
+  width: 31%;
+  margin-bottom: 23px;
+}
+
+@media screen and (max-width: 600px) {
+
+  /*-------------------------------------------
+  作品
+  -------------------------------------------*/
+  #works ul {
+    flex-direction: column;
+  }
+
+  #works li {
+    width: 100%;
+  }
+}
+
+/*-------------------------------------------
+取得スキル・資格
+-------------------------------------------*/
+#news dl {
+  display: flex;
+  /* 日付とニュースタイトルを横並びに配置 */
+  flex-wrap: wrap;
+  /* 折り返し */
+  border-top: solid 1px #c8c8c8;
+  margin-bottom: 20px;
+}
+
+#news dt {
+  width: 20%;
+  /* 日付の横幅 */
+  border-bottom: solid 1px #c8c8c8;
+  padding: 15px;
+}
+
+#news dd {
+  width: 80%;
+  /* ニュースタイトルの横幅 */
+  border-bottom: solid 1px #c8c8c8;
+  padding: 15px;
+}
+
+/* BOXデザイン016 */
+.div_design016 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.div_design016 .div_design016_contents {
+  background: #ddd;
+  width: 300px;
+  height: 300px;
+  -webkit-box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.3);
+  margin: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.div_design016 .div_design016_contents .div_design016_img {
+  width: 300px;
+  height: 180px;
+  overflow: hidden;
+}
+
+.div_design016 .div_design016_contents .div_design016_img img {
+  width: 300px;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.div_design016 .div_design016_contents p {
+  font-size: 1rem;
+  width: auto;
+  margin: 0;
+  padding: 1rem;
+  display: block;
+  text-align: center;
+}
+
+.div_design016 .div_design016_contents:hover .div_design016_img img {
+  -webkit-transform: scale(1.2, 1.2);
+  transform: scale(1.2, 1.2);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  overflow: hidden;
+}
+
+
+@media screen and (max-width: 600px) {
+
+  /*-------------------------------------------
+  News
+  -------------------------------------------*/
+  #news dl {
+    flex-direction: column;
+  }
+
+  #news dt {
+    width: 100%;
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  #news dd {
+    width: 100%;
+    padding-top: 0;
+  }
+}
+
+/*-------------------------------------------
+フッター
+-------------------------------------------*/
+#footer {
+  background-color: #24292e;
+  color: #fff;
+  font-size: 0.5rem;
+  padding: 10px 20px;
+  text-align: center;
+}
